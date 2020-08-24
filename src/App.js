@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
+import Footer from './components/Footer'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -42,11 +44,15 @@ class App extends React.Component {
                 <Link className="nav-link" to='/'>Home</Link>
                 <Link className="nav-link" to='/about'>About</Link>
                 <Link className="nav-link" to='/contact'>Contact</Link>
-
               </Nav>
-            </NavbarCollapse>
 
+            </NavbarCollapse>
           </Navbar>
+
+          <Footer>
+
+          </Footer>
+
         </Container>
       </Router>
     );
