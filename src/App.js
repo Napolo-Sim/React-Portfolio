@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -22,9 +22,8 @@ class App extends React.Component {
         { title: "Contact", path: '/contact' }
       ],
       home: {
-        title: "Be Relentless",
-        subTitle: "Projects that make a difference",
-        text: 'Checkout my projects below'
+        title: "Web Dev Projects!",
+        subTitle: "Feel free to take a look around.",
       },
       about: {
         title: "About Me",
@@ -39,8 +38,8 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg='transparent' expand='lg'>
-            <Navbar.Brand>Napoleon Vuong</Navbar.Brand>
+          <Navbar sticky="top" className="border-bottom" bg='white' expand='lg'>
+            <Navbar.Brand>Napoleon Vuong's React Portfolio</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"></Navbar.Toggle>
             <NavbarCollapse id="navbar-toggle">
               <Nav className="ml-auto">

@@ -2,13 +2,15 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import Card from '../components/Card';
+import Card from '../Cards/Card';
 
-import Github from '../assets/images/GitHubLogo.png';
-import LinkedIn from '../assets/images/LinkedInLogo.webp';
-import Twitch from '../assets/images/TwitchLogo.jpg';
+import Github from '../../assets/images/GitHubLogo.png';
+import LinkedIn from '../../assets/images/LinkedInLogo.webp';
+import Twitch from '../../assets/images/TwitchLogoSpaced.png';
+import Instagram from '../../assets/images/InstagramLogoTransparent.png';
 
-class Carousel extends React.Component {
+
+export class Carousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,15 +18,15 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'Git Hub',
-                    subTitle: 'A hub for developers everywhere',
+                    subTitle: 'Napolo-Sim',
                     imgSrc: Github,
                     link: 'https://github.com/Napolo-Sim',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Linked In',
-                    subTitle: 'LinkedIn Profile',
+                    title: 'LinkedIn',
+                    subTitle: 'Napoleon Vuong ',
                     imgSrc: LinkedIn,
                     link: 'https://www.linkedin.com/in/napoleon-vuong-08b189192/',
                     selected: false
@@ -32,9 +34,17 @@ class Carousel extends React.Component {
                 {
                     id: 2,
                     title: 'Twitch',
-                    subTitle: 'A livestreaming platform',
+                    subTitle: 'Twitch.tv/napoonthego',
                     imgSrc: Twitch,
                     link: 'https://www.twitch.tv/napoonthego',
+                    selected: false
+                },
+                {
+                    id: 3,
+                    title: 'Instagram',
+                    subTitle: '@polo_simmaly',
+                    imgSrc: Instagram,
+                    link: 'https://www.instagram.com/polo_simmaly/?hl=en',
                     selected: false
                 },
             ]
@@ -75,4 +85,4 @@ class Carousel extends React.Component {
     }
 }
 
-export default Carousel
+
