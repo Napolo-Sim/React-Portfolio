@@ -8,15 +8,16 @@ const AboutPage = (props) => {
             <Hero title={props.title} />
 
             <Content>
-                <p>Hello, my name is Napoleon Vuong. I'm a full stack engineer with experience in HTML, CSS, JavaScript, Express JS, Node JS, mySQL, MongoDB, Sequelize, and React.</p>
+                <h1 style={{ fontSize: "60px" }}>Hello! My name is Napoleon Vuong. </h1>
 
-                <p>My dream is to one day be part of a web dev team and contribute to clean and modern Websites for all types of Businesses.</p>
+                <h2>I'm a full stack engineer with experience in HTML, CSS, JavaScript, Express JS, Node JS, mySQL, MongoDB, Sequelize, and React.
 
-                <p>I'm constantly learning new things. Currently those things include gaining more experience with MongoDB/Atlas, React, Express JS, and Node JS</p>
+                My dream is to one day be part of a web dev team and contribute to clean and modern Websites for all types of Businesses.
+                I'm constantly learning new things. Currently those things include gaining more experience with MongoDB/Atlas, React, Express JS, and Node JS.
 
-                <p>My latest big project, PokeTrade, is a trading site for Pokemon Card Collectors. You can check it out <a href="https://devgrub.com" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage.</p>
+My latest big project, Kibblings, is a website for Current or soon to be pet owners to manage or find new pets that they want to adopt and stay updated with. You can check it out <a href="https://project-3-kibblings.herokuapp.com/" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage.
 
-                <p>When I'm not learning something new, chances are I'm livestreaming on Twitch. You can find me <a href="http://www.youtube.com/c/GarrettLove1" target="_blank" rel="noopener noreferrer">here</a></p>
+When I'm not learning something new, chances are I'm binge watching shows on Netflix or occasionaly livestreaming on Twitch. You can find me <a href="https://www.twitch.tv/napoonthego" target="_blank" rel="noopener noreferrer">here</a> </h2>
             </Content>
         </div>
     )

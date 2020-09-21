@@ -1,13 +1,17 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Row, Container, Col, Image, Card, Button } from 'react-bootstrap';
+import selfPhoto from '../assets/images/SelfPhoto.JPG'
 
 function Content(props) {
 
     return (
         <Container fluid={true}>
             <Row className="justify-content-center">
+                <Col md={4}>
+                    <Card>
+                        <Card.Img variant="top" src={selfPhoto} />
+                    </Card>
+                </Col>
                 <Col md={8}>
                     {props.children}
                 </Col>
